@@ -51,7 +51,10 @@ vmap('<Alt->>', 'G');
 vmap('<Alt-<>', 'gg');
 vmap('<Ctrl-l>', 'zz');
 
-settings.smoothScroll = false;
+settings.smoothScroll = true;
+settings.omnibarMaxResults = 15;
+settings.focusFirstCandidate = true;
+settings.scrollStepSize	= 120;
 
 // Search settings
 addSearchAliasX('D', 'ddgH', 'https://duckduckgo.com/html/?q=', 's', 'https://duckduckgo.com/ac/?q=', function(response) {
@@ -63,8 +66,8 @@ addSearchAliasX('D', 'ddgH', 'https://duckduckgo.com/html/?q=', 's', 'https://du
 settings.defaultSearchEngine = 'D';
 
 // Hints settings
-Hints.characters = "asdfghjkl";
-Hints.scrollKeys = "";
+Hints.characters = "asdfghjk";
+Hints.scrollKeys = "0jkhlG$";
 settings.hintAlign = "left";
 
 (function() {
@@ -90,15 +93,6 @@ settings.hintAlign = "left";
     };
 }());
 
-(function() {
-    var nums = "456";
-    mapkey('^f', "#1Open a link (for numpad)", function () {
-        Hints.create("", Hints.dispatchMouseClick, {debugitos_characters: nums});
-    });
-    mapkey('^C', '#1Open a link in non-active new tab (for numpad)', function() {
-        Hints.create("", Hints.dispatchMouseClick, {tabbed: true, active: false, debugitos_characters: nums});
-    });
-}());
 
 // set theme
 settings.theme = `
