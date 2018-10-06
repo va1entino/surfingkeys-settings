@@ -1,48 +1,37 @@
+//path:https://raw.githubusercontent.com/va1entino/surfingkeys-settings/master/settings.js
 // Navigation
-map('<Ctrl-a>', '0');
-unmap('0');
-map('<Alt-v>', 'e');
-unmap('e');
-map('<Ctrl-v>', 'd');
-map('<Alt-<>', 'gg');
-unmap('gg');
-map('<Alt->>', 'G');
-unmap('G');
-map('<Ctrl-n>', 'j');
-map('<Ctrl-p>', 'k');
-map('<Ctrl-f>', 'l');
-map('<Ctrl-b>', 'h');
-map('<Ctrl-e>', '$');
-unmap('$');
+map('<Ctrl-a>', '0'); //行首
+map('E', 'gg'); //页首
+map('D', 'G'); //页尾
+map('D', 'G');
+map('D', 'G');
+map('D', 'G');
+map('D', 'G');
+map('D', 'G');
 
 // Tabs
-map('h', 'E');
-map('l', 'R');
+map('h', 'E'); //切换左标签
+map('l', 'R'); //切换右标签
+map('w', 'x'); //关闭当前标签
+map('q', 'X'); //恢复刚刚关闭的标签
+map('', 'X');
+map('q', 'X');
+map('q', 'X');
+map('q', 'X');
+map('q', 'X');
 
 // History
-map('B', 'S');
+map('<Alt-h>', 'S');
 unmap('S');
-map('F', 'D');
+map('<Alt-l>', 'D');
 unmap('D');
 
 // Reload
 map('R', 'r');
 unmap('r');
 
-// Disable insert mode binding because it's handled by Gtk+
-iunmap('<Ctrl-e>');
-iunmap('<Ctrl-f>');
-iunmap('<Ctrl-u>');
-iunmap('<Alt-b>');
-iunmap('<Alt-f>');
-iunmap('<Alt-d>');
-iunmap('<Alt-w>');
 
 // visual mode navigation
-vmap('<Ctrl-f>', 'l');
-vmap('<Ctrl-b>', 'h');
-vmap('<Ctrl-n>', 'j');
-vmap('<Ctrl-p>', 'k');
 vmap('<Ctrl-e>', '$');
 vmap('<Ctrl-a>', '0');
 vmap('<Alt-f>', 'w');
@@ -54,7 +43,8 @@ vmap('<Ctrl-l>', 'zz');
 settings.smoothScroll = true;
 settings.omnibarMaxResults = 15;
 settings.focusFirstCandidate = true;
-settings.scrollStepSize	= 120;
+settings.scrollStepSize	= 140;
+
 
 // Search settings
 addSearchAliasX('D', 'ddgH', 'https://duckduckgo.com/html/?q=', 's', 'https://duckduckgo.com/ac/?q=', function(response) {
@@ -66,7 +56,7 @@ addSearchAliasX('D', 'ddgH', 'https://duckduckgo.com/html/?q=', 's', 'https://du
 settings.defaultSearchEngine = 'D';
 
 // Hints settings
-Hints.characters = "asdfghjk";
+Hints.characters = "werasdfgvhjionm";
 Hints.scrollKeys = "0jkhlG$";
 settings.hintAlign = "left";
 
