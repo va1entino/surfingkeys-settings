@@ -1,9 +1,15 @@
 //path:https://raw.githubusercontent.com/va1entino/surfingkeys-settings/master/settings.js
 // Navigation
 map('<Ctrl-a>', '0'); //行首
+
+map('H', 'h'); //向左滚动
+map('L', 'l'); //向右滚动
 map('E', 'gg'); //页首
+map('gk', 'gg'); //页首
 map('D', 'G'); //页尾
-map('D', 'G');
+map('gj', 'G'); //页尾
+map('gh', 'g0'); //跳到第一个标签
+map('gl', 'g$'); //跳到最后一个标签
 map('D', 'G');
 map('D', 'G');
 map('D', 'G');
@@ -14,7 +20,10 @@ map('h', 'E'); //切换左标签
 map('l', 'R'); //切换右标签
 map('w', 'x'); //关闭当前标签
 map('q', 'X'); //恢复刚刚关闭的标签
-map('q', 'X');
+map('<Ctrl-h>', 'gxt'); //关闭左侧标签
+map('<Ctrl-l>', 'gxT'); //关闭右侧标签
+map('<Alt-h>', '<<'); //往左移动当前标签
+map('<Alt-l>', '>>'); //往右移动当前标签
 map('q', 'X');
 map('q', 'X');
 map('q', 'X');
@@ -29,6 +38,8 @@ unmap('D');
 map('R', 'r');
 unmap('r');
 
+// Others
+map('oo', 'ob'); //快速百度搜索
 
 // visual mode navigation
 vmap('<Ctrl-e>', '$');
