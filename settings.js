@@ -5,6 +5,7 @@ map('<Ctrl-a>', '0'); //行首
 map('H', 'h'); //向左滚动
 map('L', 'l'); //向右滚动
 map('E', 'gg'); //页首
+unmap('E');
 map('gk', 'gg'); //页首
 map('D', 'G'); //页尾
 map('gj', 'G'); //页尾
